@@ -12,7 +12,7 @@ ChessBoard::ChessBoard(){
                 else if(i<2 && j==3) board[i][j]=4; //król czarna
                 else if(i<2 && j==4) board[i][j]=5; //królowa czarna
             }
-            else if(i==1) board[i][j]=6;
+            else if(i==1) board[i][j]=6; //pion czarny
             else if(i==n-2) board[i][j]=7;
             else if(i==n-1){
                 if(j==0 || j==n-1) board[i][j]=7; //wieża biala
