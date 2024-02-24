@@ -16,7 +16,7 @@ public:
         moved=false;
         exsist=true;
     }
-    virtual int move(int board[8][8], int xPos, int yPos) override{ };// czy można wykonać ruch
+    virtual int move(int board[8][8], int xPos, int yPos){ };// czy można wykonać ruch
 };
 
 class King: public Chess{

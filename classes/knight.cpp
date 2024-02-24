@@ -2,7 +2,7 @@
 #define n 8
 #define taking 2
 
-Knight::int move(int board[8][8],int xPos, int yPos) override{
+int Knight::move(int board[8][8],int xPos, int yPos) {
     if(xPos >n || xPos<0 || yPos<0 || yPos >n) return 0;
 
     if(board[xPos][xPos]==0 && x==xPos+2 && y==yPos+1) return 1;
