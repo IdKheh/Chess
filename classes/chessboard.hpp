@@ -1,11 +1,16 @@
+#include "chess.hpp"
+#include <vector>
+#include <memory>
 class ChessBoard
 {
-private:
-    int board[8][8];
 public:
+    int board[8][8];
+    std::vector<std::unique_ptr<Chess>> black;
+    std::vector<std::unique_ptr<Chess>> white;
+
     ChessBoard();
-    void setUp();
+    ~ChessBoard();
     void print();  
     void move(int x, int y, int xPos, int yPos, int value);
-    void taking(int x, int y);
+    void taking(int x, int y,int xPos, int yPos, int value);
 };
